@@ -1,0 +1,46 @@
+.navBar{
+    background-color: #FF9C3D;
+    margin-top: 0;
+    margin-right: 0;
+    padding-right: 0;
+    justify-content: flex-end;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    color: yellow;
+    font-size: larger;
+    font-weight: 990;
+    border: solid;
+    width: 100%;
+    }
+body{
+    background-image: linear-gradient(#EB5D13, #FF9C3D);
+    margin-top: 0;
+    margin-left: 0;
+    background-size: cover;
+    position: relative;
+    margin-right: 0;
+}
+.imagemNaruto{
+   width: 150rem;
+}
+.imagemNarutoConfig{
+    background-size: 100%;
+    display: flex;
+    margin-left: 35rem;
+    margin-top: 5rem;
+}
+
+.texto1{
+    width: 25rem;
+    color:yellow;
+    display: inline-flex;
+    position: relative;
+    flex-direction: flex-start;
+    float: left;
+    margin-top: 3rem;
+    margin-left: 35rem;
+    padding-bottom: 20rem;
+    font-size: 3.5em;
+    height: 100%;
+}
