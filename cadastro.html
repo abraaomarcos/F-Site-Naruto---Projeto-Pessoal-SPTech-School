@@ -4,15 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./cadastro.css">
 </head>
 <body>
-        
-        
-    <div class="texto1">
-        <a href="./index.html">Página Inicial</a>
-      Naruto - O menino que venceu o destino
+    <head>
+    <nav class="navBarCadastro">
+        <ol>
+            <ul><a href="./index.html"><b>Home</b></a></ul>
+        </ol>
+        <ol>
+            <ul><a href=""><b>Sobre o Naruto</b></a></ul>
+        </ol>
+    </nav>
+</head>
+    <div class="form">
+        <div id="msgInput">
+            Preencha os campos a seguir com seus dados de cadastro<br>   
+        </div>
     </div>
+    <div class="input" id="input_Nome">
+        <br> <input placeholder="Nome Completo"><br>     
+     </div>
+     <div class="input">
+        <input placeholder="telefone" id="input_Telefone"><br>
+     </div>
+     <div class="input">
+        <input placeholder="email" id="input_Email"><br>
+     </div>
+     <div class="input">
+        <input placeholder="senha" id="input_Senha" type="password" ><br>
+     </div>
+     <div class="input">
+       <button onclick="">Cadastrar</button>
+     </div>    
 </body>
 </html>
+<script>
+function Cadastrar(){
+    var nome = input_Nome.value;
+    var telefone = input_Telefone.value;
+    var email = input_Email.value;
+    var senha = input_Senha.value;
+}
+</script>

@@ -1,46 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .navBar{
-    background-color: #FF9C3D;
-    margin-top: 0;
-    margin-right: 0;
-    padding-right: 0;
-    justify-content: flex-end;
-    display: flex;
-    position:relative;
-    flex-direction: row;
-    color: yellow;
-    font-size: larger;
-    font-weight: 990;
-    border: solid;
-    width: 100%;
-    }
+    color: #ffff;
+/* backdrop-filter: blur(100px); */
+display: flex;
+position: fixed;
+width: 100%;
+flex-direction: row;
+justify-content: space-around;
+/* background-color: #FBE407; */
+padding-top: 1.4rem;
+padding-left: 12rem;
+font-size: 26px;
+font-weight: bold;
+transition: 800ms;
+transition-duration: 800ms;
+:hover{
+background-color: #FBE407;
+color: #000;
+}
+}
 body{
-    background-image: linear-gradient(#EB5D13, #FF9C3D);
-    margin-top: 0;
-    margin-left: 0;
+    background-image: url("./naruto\ time\ 7\ iruka.jpg");
     background-size: cover;
-    position: relative;
-    margin-right: 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
 }
-.imagemNaruto{
-   width: 150rem;
-}
-.imagemNarutoConfig{
-    background-size: 100%;
+.container{
     display: flex;
-    margin-left: 35rem;
-    margin-top: 5rem;
+    width: 100%;
+    justify-content: center;
+    flex-direction:inherit;
 }
-
 .texto1{
-    width: 25rem;
-    color:yellow;
-    display: inline-flex;
-    position: relative;
-    flex-direction: flex-start;
-    float: left;
-    margin-top: 3rem;
-    margin-left: 35rem;
-    padding-bottom: 20rem;
-    font-size: 3.5em;
-    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+   margin-top: 40rem;
+   text-shadow:#FBE407;
+   color:#ffff;
+   font-weight: bold;
+   background-position: center;
+   background-color: transparent;
+   text-shadow:white;
+   /* font-size: 20px;
+   border: none; */
+}
+#texto2{
+    text-shadow:darkgreen;
+    margin-top: 0px;
+    border: none;
+ width: 100%;
+ font-size: 15px;
+}
+.footer{
+    display: flex;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+
 }
