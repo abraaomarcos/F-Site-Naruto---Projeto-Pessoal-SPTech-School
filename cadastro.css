@@ -30,6 +30,7 @@ body{
    border: none;
 }
 #msgInput{
+    margin-left: 10rem;
     backdrop-filter: blur(40px);
     font-size: 20px;
     display: flex;
@@ -42,5 +43,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-left: 10rem;
+    margin-left: 24rem;
+    resize:horizontal;
+    width:200px;
 }
