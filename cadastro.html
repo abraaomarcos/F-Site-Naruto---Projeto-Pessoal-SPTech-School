@@ -10,41 +10,46 @@
 <body>
     <head>
     <nav class="navBarCadastro">
-        <ol>
-            <ul><a href="./index.html"><b>Home</b></a></ul>
-        </ol>
-        <ol>
-            <ul><a href="./index.html#texto2"><b>Sobre o Naruto</b></a></ul>
-        </ol>
+        <li>
+            <ol><a href="./index.html" style="text-decoration: none; color: #ffff;"><b>Home</b></a></ol>
+        </li>
+        <li>
+            <ol><a href="index.html#texto1" style="text-decoration: none; color: #ffff;"><b>Sobre o Naruto</b></a></ol>
+        </li>
     </nav>
 </head>
     <div class="form">
         <div id="msgInput">
-            Preencha os campos a seguir com seus dados de cadastro<br>   
+            <h3>Preencha os campos a seguir com seus dados de cadastro</h3><br>
         </div>
     </div>
-    <div class="input" id="input_Nome">
-        <br> <input placeholder="Nome Completo"><br>     
-     </div>
-     <div class="input">
-        <input placeholder="telefone" id="input_Telefone"><br>
-     </div>
-     <div class="input">
-        <input placeholder="email" id="input_Email"><br>
-     </div>
-     <div class="input">
-        <input placeholder="senha" id="input_Senha" type="password" ><br>
-     </div>
-     <div class="input">
-       <button onclick="">Cadastrar</button>
+    <div class="input">
+		<form>
+			<input type="text" id="input_Nome" placeholder="nome"><br>
+			<input type="email" id="input_Email" placeholder="e-mail" >
+			<input type="password" id="input_Senha" placeholder="senha" >
+			<input type="password" id="input_confirmarSenha" placeholder="confirmar senha" >
+			<button onclick="Cadastrar()">Cadastrar</button><br>
+            <div id="div_Cadastro"></div>
+		</form>
+      
      </div>    
 </body>
 </html>
 <script>
 function Cadastrar(){
     var nome = input_Nome.value;
-    var telefone = input_Telefone.value;
     var email = input_Email.value;
     var senha = input_Senha.value;
+    var confirmaSenha = input_confirmarSenha.value
+    if(nome < 0 || email < 0 || senha < 0 || confirmaSenha < 0 ){
+        alert("preencha todos os campos")
+    } if(senha != confirmaSenha){
+    alert(`os campos "senha" e "confirmação de senha" precisam ser iguais. Tente novamente`);
+    }else{
+        div_Cadastro.innerHTML = `Usuário ${nome} cadastrado com sucesso`;
+        window.location.replace("./logado.html")
+    }
+    
 }
 </script>

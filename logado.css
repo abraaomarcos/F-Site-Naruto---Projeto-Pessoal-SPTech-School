@@ -1,0 +1,9 @@
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+body{
+    background-color: #f9a629;
+}
