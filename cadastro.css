@@ -7,9 +7,11 @@
     flex-direction: row;
     justify-content: space-around;
     text-decoration: none;
+    color: #fff;
 }
 
 body{
+    color: #fff;
     background-image: url("./naruto\ time\ 7\ iruka.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,6 +19,7 @@ body{
 }
 
 .form{
+    color: white;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -31,7 +34,7 @@ body{
    border: none;
 }
 #msgInput{
-    margin-left: 10rem;
+    color: #fff;
     backdrop-filter: blur(40px);
     font-size: 20px;
     display: flex;
@@ -40,11 +43,15 @@ body{
     font-weight: bolder;
 }
 .input{
-    background-color: transparent;
+    gap: 10rem;
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-left: 24rem;
-    resize:horizontal;
-    width:200px;
+    flex-direction: column;
+    width:500px;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 2rem;
+
 }

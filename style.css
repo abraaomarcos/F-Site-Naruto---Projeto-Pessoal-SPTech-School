@@ -3,33 +3,26 @@
     padding: 0;
 }
 .navBar{
+    position: fixed;
     text-decoration: none;
     border: groove;
-    box-shadow: #000;
+    /* background: linear-gradient(90deg, #f92929, #f9a629); */
+    
     opacity: 90%;
     list-style: none;
-    color: #ffff;
+    color: rgb(115, 40, 221);
 display: flex;
-position: fixed;
 width: 100%;
 flex-direction: row;
-justify-content: space-around;
-/* background-color: #FBE407; */
+justify-content:space-around;
 padding-top: 1.4rem;
-padding-left: 7rem;
 font-size: 26px;
 font-weight: bold;
-transition: 800ms;
-transition-duration: 800ms;
 :hover{
 background-color: #FBE407;
-color: #ffff;
 }
 }
 body{
-    /* background-image: url("./naruto\ time\ 7\ iruka.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;*/
     background-color: #f9a629;
 
 }
@@ -37,32 +30,25 @@ body{
     display: flex;
     width: 100%;
     justify-content: center;
-    flex-direction:inherit;
+    flex-direction:row;
 }
 .carrossel{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 40rem;
-    background-image: url("./naru-sas-saku.png");
+    /* margin-top: ; */
 }
 .texto1{
     backdrop-filter: invert(80%);
     opacity: 90%;
-    width: 100%;
     display: flex;
     justify-content: center;
     font-size: 22px;
-   margin-top: 40rem;
    color:#ffff;
    font-weight: bold;
    background-position: center;
-   background-color: transparent;
-   text-shadow:#000;
-   margin-right: 0;
 }
 #texto1{
-    text-shadow:#000;
     color: #ffff;
     margin-top: 0px;
     border: none;
@@ -70,7 +56,19 @@ body{
  font-size: 15px;
  font-weight: bold;
 }
+#pqNaruto{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrossel{
+    position:inherit;
+   
+}
 .textoFooter{
+    display: flex;
+    margin-top: 40rem;
     color: #ffff;
     display: flex;
     text-align: center;
