@@ -3,7 +3,7 @@
     padding: 0;
 }
 .navBar{
-    position: fixed;
+    position:relative;
     text-decoration: none;
     border: groove;
     /* background: linear-gradient(90deg, #f92929, #f9a629); */
