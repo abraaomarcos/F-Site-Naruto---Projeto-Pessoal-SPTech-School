@@ -39,7 +39,7 @@ body{
     /* margin-top: ; */
 }
 .texto1{
-    backdrop-filter: invert(80%);
+    background-color: #121212;
     opacity: 90%;
     display: flex;
     justify-content: center;
