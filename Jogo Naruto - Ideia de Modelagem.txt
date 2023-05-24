@@ -1,0 +1,50 @@
+Usuário
+
+Nome
+email
+Senha
+
+Personagem
+nome
+descricao
+energia
+fase(Genin, Chunin, Jonin)
+nível - Elite/Kage
+
+
+Poderes
+Genin 1
+Genin 2
+Chunin 1
+Chunin 2
+Jonin 1
+Jonin 2
+Jonin 3
+
+Personagens:
+Naruto   Jonin2
+Sasuke   Jonin2
+Sakura   Jonin2
+Kakashi  Jonin2
+Maito GuyJonin2
+Jiraya   Jonin3
+Tsunade  Jonin3
+OrochimaruJonin3
+Gaara     Jonin2
+Temari    Jonin2
+Itachi    Jonin2
+Minato Namikaze(quarto) Jonin3
+Hiruzen Sarutobi(terceiro)Jonin3
+Shino     Jonin2
+Shikamaru Jonin2
+Rock Lee  Jonin2
+Neji      Jonin2
+Hinata    Jonin2
+
+
+
+
+
+
+
+
