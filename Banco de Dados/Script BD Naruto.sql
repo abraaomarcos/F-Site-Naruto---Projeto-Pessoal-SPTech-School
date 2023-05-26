@@ -21,3 +21,10 @@ constraint chkNivel CHECK(nivel in('elite', 'kage'))
  );
  ALTER TABLE  personagem ADD CONSTRAINT chavePrimaria PRIMARY KEY(idPersonagem);
  ALTER TABLE usuario ADD CONSTRAINT fkPersonagUsua FOREIGN KEY(fkPersonagem) REFERENCES personagem(idPersonagem);
+ 
+ CREATE TABLE poderes(
+ idPoderes INT PRIMARY KEY AUTO_INCREMENT,
+ tipoPoder VARCHAR(45),
+ fkPoderPerson INT,
+ CONSTRAINT fkpoderPersonag FOREIGN KEY(fkPoderPerson) REFERENCES personagem(idPersonagem)
+ );
