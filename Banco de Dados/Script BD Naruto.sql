@@ -19,3 +19,5 @@ constraint chkNivel CHECK(nivel in('elite', 'kage'))
  senha VARCHAR(45),
  fkPersonagem INT
  );
+ ALTER TABLE  personagem ADD CONSTRAINT chavePrimaria PRIMARY KEY(idPersonagem);
+ ALTER TABLE usuario ADD CONSTRAINT fkPersonagUsua FOREIGN KEY(fkPersonagem) REFERENCES personagem(idPersonagem);
