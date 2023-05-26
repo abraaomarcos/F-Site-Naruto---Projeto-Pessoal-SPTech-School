@@ -73,6 +73,8 @@ Jonin 1
 Jonin 2
 Jonin 3
 
+Tipos de poderes: fogo, água, vento, terra, raio
+
 Personagens:
 Naruto   Jonin2
 Sasuke   Jonin2
