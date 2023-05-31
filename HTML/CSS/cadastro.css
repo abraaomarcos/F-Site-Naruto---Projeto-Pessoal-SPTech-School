@@ -25,7 +25,7 @@ backdrop-filter: blur(#f9a629);
 body{
     background-color:#f9a629;
     color: #fff;
-    background-image: url("./naruto\ time\ 7\ iruka.jpg");
+    background-image: url("C:\Users\abraa\OneDrive\Área de Trabalho\SPTECH\PI\Projeto Pessoal\F-Site-Naruto---Projeto-Pessoal-SPTech-School\assets");
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: #0000;
@@ -35,15 +35,13 @@ body{
     color: white;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 22px;
-   text-shadow:#FBE407;
    color: black;
    font-weight: bold;
    background-position: center;
    background-color: transparent;
    text-shadow: #0000;  
-   font-size: 20px;
    border: none;
 }
 #msgInput{
@@ -56,12 +54,16 @@ body{
     font-weight: bolder;
 }
 .input{
-    gap: 10rem;
+    /* gap: 10rem; */
     display: flex;
     flex-direction: column;
-    width:500px;
+    /* width:500px; */
     justify-content: center;
-    align-items: center;
+    /* align-items:start; */
+    background-image: url("../naruto\ cadastro\ kunai.jpg");
+    background-repeat: no-repeat;
+    height: 50rem;
+    padding-left: 200px;
 }
 label{
     font-weight: bold;

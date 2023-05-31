@@ -1,0 +1,35 @@
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    border: groove;
+    color: #fff;
+}
+body{
+    background-color: #f9a629;
+}
+.ImgNaruto-logado{
+ display: flex;
+align-items: center;
+justify-content: center;
+}
+#container{
+    display: flex;
+    margin-top: 300px;
+    justify-content: center;
+}
+#title{
+    background-color: aqua;
+    border-radius: 20px;
+}
+#primeira{
+    display: flex;
+    justify-content: center;
+}
+.selects{
+    justify-content: center;
+    align-items: center;´
+    text-align: center;
+}

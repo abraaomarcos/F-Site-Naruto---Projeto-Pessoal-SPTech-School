@@ -16,10 +16,11 @@ width: 100%;
 flex-direction: row;
 justify-content:space-around;
 padding-top: 1.4rem;
-font-size: 26px;
+font-size: 25px;
 font-weight: bold;
 :hover{
 background-color: #FBE407;
+transition: .3 ease-in-out;
 }
 }
 body{
@@ -30,7 +31,7 @@ body{
     display: flex;
     width: 100%;
     justify-content: center;
-    flex-direction:row;
+    flex-direction:column;
 }
 .carrossel{
     display: flex;
@@ -38,33 +39,89 @@ body{
     justify-content: center;
     /* margin-top: ; */
 }
+
+.div_texto1{
+display: flex;
+justify-content: center;
+padding-top: 20px;
+}
+
+.div_texto2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; 
+    flex-direction: column;
+}
 .texto1{
     background-color: #121212;
+    border-radius: 20px;
+    width: 52%;    
     opacity: 90%;
     display: flex;
     justify-content: center;
     font-size: 22px;
    color:#ffff;
    font-weight: bold;
-   background-position: center;
 }
+
 #texto1{
-    color: #ffff;
-    margin-top: 0px;
-    border: none;
- width: 100%;
- font-size: 15px;
- font-weight: bold;
+    color: #121212;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    width: 70%;
+    position: relative;
+    left: 14%;
+    font-size: 25px;
 }
+
+
+
+#texto2 span{
+    color: #121212;
+
+ font-weight: bold;
+ text-align: center;
+}
+
 #pqNaruto{
-    margin-top: 5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    left: 25%;
 }
+
+.titulo2{
+    background-color: #121212;
+    border-radius: 20px;
+    width: 52%;    
+    opacity: 90%;
+    font-size: 22px;
+   color:#ffff;
+   font-weight: bold;
+}
+
+#texto2{
+    color: #121212;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    width: 70%;
+    position: relative;
+    left: 14%;
+    font-size: 25px;  
+}
+
+
+
 .carrossel{
     position:inherit;
    
+}
+
+.footer{
+    border: 5px solid white;
+    background: #121212;
 }
 .textoFooter{
     display: flex;
@@ -78,4 +135,12 @@ body{
     color: #ffff;
     display: flex;
     justify-content: center;
+}
+
+.hr{
+    color: #121212;
+    margin-top: 20px;
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
