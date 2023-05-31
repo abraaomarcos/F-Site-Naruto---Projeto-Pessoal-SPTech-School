@@ -1,0 +1,14 @@
+*{
+    background-color: #f9a629;
+}
+
+#quiz {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  #error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
