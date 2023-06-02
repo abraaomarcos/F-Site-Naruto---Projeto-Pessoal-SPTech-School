@@ -17,7 +17,7 @@ justify-content: center;
 }
 #container{
     display: flex;
-    margin-top: 300px;
+    margin-top: 100px;
     justify-content: center;
 }
 #title{
@@ -27,9 +27,4 @@ justify-content: center;
 #primeira{
     display: flex;
     justify-content: center;
-}
-.selects{
-    justify-content: center;
-    align-items: center;´
-    text-align: center;
 }

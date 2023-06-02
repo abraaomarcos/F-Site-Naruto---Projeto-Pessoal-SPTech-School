@@ -1,67 +1,75 @@
 function submitQuiz() {
-   var form = document.getElementById("quiz-form");
-   var answers = form.elements;
-   var scores = {
-     garra: 0,
-     esforco: 0,
-     foco: 0,
-     inteligencia: 0,
-     raciocinio: 0,
-     responsabilidade: 0,
-     moderacao: 0,
-     generosidade: 0,
-     autoestima: 0,
-     apaixonada: 0
-   };
- 
-   // Verifica se todas as perguntas foram respondidas
-   var allQuestionsAnswered = true;
-   for (var i = 0; i < answers.length; i++) {
-     if (answers[i].value === "") {
-       allQuestionsAnswered = false;
-       break;
-     }
-   }
- 
-   // if (i < answers.length) {
-   //   var errorMessage = document.getElementById("error-message");
-   //   errorMessage.textContent = "Por favor, responda todas as perguntas.";
-   //   return;
-   // }
- 
-   // Calcula a pontuação com base nas respostas selecionadas
-   for (var i = 0; i < answers.length; i++) {
-     var selectedValue = answers[i].value;
-     scores[selectedValue]++;
-   }
- 
-   // Determina o resultado com base na pontuação
-   var result = document.getElementById("result");
-   var highestScore = 0;
-   var character = "";
- 
-   // Objeto com os nomes dos personagens
-   var characterNames = {
-     garra: "Naruto Uzumaki",
-     esforco: "Rock Lee",
-     foco: "Sasuke Uchiha",
-     inteligencia: "Sakura Haruno",
-     raciocinio: "Kakashi Hatake",
-     responsabilidade: "Tsunade Senju",
-     moderacao: "Jiraiya",
-     generosidade: "Gaara",
-     autoestima: "Neji Hyuga",
-     apaixonada: "Hinata Hyuga"
-   };
- 
-   for (var score in scores) {
-     if (scores[score] > highestScore) {
-       highestScore = scores[score];
-       character = score;
-     }
-   }
- 
-   // Exibe o resultado na tela
-   result.innerHTML = "Personagem associado: " + characterNames[character];
- }
- 
+  var result = document.getElementById("result");
+  var answers = document.getElementsByTagName("select");
+  var characterCount = {
+    garra: 0,
+    esforco: 0,
+    foco: 0,
+    inteligencia: 0,
+    raciocinio: 0,
+    apaixonada: 0,
+    responsabilidade: 0,
+    moderacao: 0,
+    generosidade: 0,
+    autoestima: 0
+  };
+
+  for (var i = 0; i < answers.length; i++) {
+    var selectedValue = answers[i].value;
+    if (selectedValue !== "") {
+      characterCount[selectedValue]++;
+    }
+  }
+
+  var maxCount = 0;
+  var maxCharacter = "";
+
+  for (var character in characterCount) {
+    if (characterCount[character] > maxCount) {
+      maxCount = characterCount[character];
+      maxCharacter = character;
+    }
+  }
+
+  if (maxCharacter === "") {
+    result.textContent = "Por favor, responda a todas as perguntas.";
+  } else {
+    var nomePersonagem = "";
+
+    switch (maxCharacter) {
+      case "garra":
+        nomePersonagem = "Naruto";
+        break;
+      case "esforco":
+        nomePersonagem = "Rock Lee";
+        break;
+      case "foco":
+        nomePersonagem = "Neji";
+        break;
+      case "inteligencia":
+        nomePersonagem = "Sakura";
+        break;
+      case "raciocinio":
+        nomePersonagem = "Sasuke";
+        break;
+      case "apaixonada":
+        nomePersonagem = "Hinata";
+        break;
+      case "responsabilidade":
+        nomePersonagem = "Tsunade";
+        break;
+      case "moderacao":
+        nomePersonagem = "Jiraya";
+        break;
+      case "generosidade":
+        nomePersonagem = "Gaara";
+        break;
+      case "autoestima":
+        nomePersonagem = "Neji";
+        break;
+    }
+
+    result.innerHTML += `Parabéns, você é o/a ${nomePersonagem}!<br>`;
+    result.innerHTML += `Conheça mais sobre o/a <a href="./cadastro.html" style="text-decoration: none; color: #ffff; background-color: aqua; border-radius: 10px;">${nomePersonagem}</a>`
+  }
+}

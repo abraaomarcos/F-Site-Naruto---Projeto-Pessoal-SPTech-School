@@ -12,40 +12,41 @@ function cadastrar() {
         alert("A confirmação da senha precisa ser igual à senha")
 
     }
+    window.location.href("C:\Users\abraa\OneDrive\Área de Trabalho\SPTECH\PI\Projeto Pessoal\F-Site-Naruto---Projeto-Pessoal-SPTech-School\HTML\logado.html")
    
 
     // Enviando o valor da nova input
-    fetch("https://localhost:7289/Usuarios/Create", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            // crie um atributo que recebe o valor recuperado aqui
-            // Agora vá para o arquivo routes/usuario.js
-            id: 1,
-            nome: nomeVar,
-            email: emailVar,
-            senha: senhaVar
-        })
-    }).then(function (resposta) {
+//     fetch("https://localhost:7289/Usuarios/Create", {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify({
+//             // crie um atributo que recebe o valor recuperado aqui
+//             // Agora vá para o arquivo routes/usuario.js
+//             id: 1,
+//             nome: nomeVar,
+//             email: emailVar,
+//             senha: senhaVar
+//         })
+//     }).then(function (resposta) {
 
-        console.log("resposta: ", resposta);
+//         console.log("resposta: ", resposta);
 
-        if (resposta.ok) {
+//         if (resposta.ok) {
            
-            setTimeout(() => {
-                window.location = "logado.html";
-            }, "2000")
-        } else {
-            throw ("Houve um erro ao tentar realizar o cadastro!");
-        }
-    }).catch(function (resposta) {
-        console.log(`#ERRO: ${resposta}`);
-    });
+//             setTimeout(() => {
+//                 window.location = "logado.html";
+//             }, "2000")
+//         } else {
+//             throw ("Houve um erro ao tentar realizar o cadastro!");
+//         }
+//     }).catch(function (resposta) {
+//         console.log(`#ERRO: ${resposta}`);
+//     });
 
-    return false;
-}
+//     return false;
+// }
 
 // function Cadastrar(){
 //     var nome = input_Nome.value;
@@ -65,3 +66,12 @@ function cadastrar() {
 // }
 
 //https://localhost:7289/
+
+// function Entrar(){
+    //     var nome = input_Nome.value;
+    //     var email = input_Email.value;
+    //     var senha = input_Senha.value;
+    //     var confirmaSenha = input_ConfirmarSenha.value
+    //     if (nome == '' || email == '' || senha == ''){
+    //         alert("preencha todos os campos")
+    //     }
