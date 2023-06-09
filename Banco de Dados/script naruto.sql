@@ -19,7 +19,7 @@ INSERT INTO usuario VALUES
 (DEFAULT, 'Marcos', 'marcos@sptech.com', '123456'),
 (DEFAULT, 'Guiomar', 'guiomar@sptech.com', '123456');
 
-
+select * from usuario;
 CREATE TABLE personalidade(
 idPersonalidade INT PRIMARY KEY AUTO_INCREMENT,
 nomePersonalidade VARCHAR(45)
@@ -47,6 +47,9 @@ fkPersonalidade int NOT NULL,
 CONSTRAINT fkPersonalidadeUser FOREIGN KEY(fkPersonalidade)
 REFERENCES personalidade(idPersonalidade)
 );
+SELECT * FROM personagem JOIN usuario ON idUsuario = fkUsuario;
+SELECT usuario.nome, personagem.nomePersonagem from usuario JOIN personagem ON idUsuario = fkUsuario;
+
 
 INSERT INTO personagem VALUES
 (DEFAULT, 'Naruto', 1, 1),
@@ -62,3 +65,14 @@ INSERT INTO personagem VALUES
 
 SELECT * FROM usuario JOIN personagem ON idUsuario = fkUsuario;
 SELECT * FROM usuario JOIN personagem ON idUsuario = fkUsuario JOIN personalidade ON idPersonalidade = fkPersonalidade;
+
+SELECT * FROM usuario;
+use naruto;
+SELECT * FROM usuario;
+select * from personagem;
+
+SELECT * FROM usuario JOIN personagem ON idUsuario = fkUsuario;
+
+
+
+
